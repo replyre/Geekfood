@@ -1,0 +1,82 @@
+.section1 {
+  background-image: url("https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  /* width: 80vh; */
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  line-height: 50px;
+  align-items: center;
+  padding-right: 700px;
+  text-align: center;
+  overflow-x: none;
+}
+
+.section1 div {
+}
+.section1 div:first-child p {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section1 div:first-child p:last-child {
+  color: royalblue;
+  text-shadow: 2px 2px 2px black;
+}
+.section1 p {
+  margin: 0px 130px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0px 0px 12px white;
+}
+
+.section1 .buttons {
+  /* background-color: antiquewhite; */
+  padding-right: 120px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.section1 .buttons button {
+  background-color: royalblue;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px 40px;
+}
+.section1 .buttons button:last-child {
+  background-color: white;
+  color: royalblue;
+}
+
+.section1 .buttons button:hover {
+  background-color: rgb(59, 94, 198);
+}
+.section1 .buttons button:last-child:hover {
+  background-color: rgb(233, 230, 230);
+}
+
+@media screen and (max-width: 600px) {
+  .section1 {
+    padding-right: 0px;
+    padding-top: 20px;
+  }
+  .section1 p {
+    margin: 0px;
+    font-size: 15px;
+  }
+  .section1 div:first-child p {
+    font-size: 35px;
+  }
+  .section1 .buttons {
+    /* background-color: antiquewhite; */
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
