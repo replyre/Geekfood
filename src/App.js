@@ -1,18 +1,25 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Review from "./components/Review";
-import Section1 from "./components/Section1";
-import Section2 from "./components/Section2";
+
+import Home from "./pages/Home";
+import Quotes from "./pages/Quotes";
+import NoPage from "./pages/Nopage";
+import { useState } from "react";
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Section1></Section1>
-      <Section2></Section2>
-      <Review></Review>
-      <Footer></Footer>
+      <BrowserRouter basename="/">
+        <Header></Header>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="quotes" element={<Quotes />} />
+          {/* <Route path="*" element={<NoPage />} /> */}
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
     </>
   );
 }

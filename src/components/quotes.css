@@ -1,0 +1,18 @@
+.quotes {
+  padding-top: 100px;
+}
+.quote {
+  background-color: rgb(17, 24, 39);
+  color: white;
+  padding: 30px;
+  margin: 70px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+.quote-text {
+  font-size: 30px;
+}
+.quote-author {
+  padding-top: 10px;
+  text-align: center;
+}
