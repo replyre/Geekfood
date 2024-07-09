@@ -11,7 +11,7 @@ import { useState } from "react";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/Geekfood">
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
