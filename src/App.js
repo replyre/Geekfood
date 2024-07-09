@@ -6,17 +6,16 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Quotes from "./pages/Quotes";
 import NoPage from "./pages/Nopage";
-import { useState } from "react";
 
 function App() {
   return (
     <>
-      <BrowserRouter basename="/Geekfood">
+      <BrowserRouter basename="/">
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="quotes" element={<Quotes />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
