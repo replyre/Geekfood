@@ -1,0 +1,58 @@
+.restro-container {
+  padding-top: 100px;
+}
+
+.filters {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
+.filters input {
+  font-size: 18px;
+  padding: 2px;
+}
+
+.restaurants {
+  width: 70%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.res {
+  background: url("https://assets.architecturaldigest.in/photos/64f85037ec0bc118bdd98aba/16:9/w_1920,c_limit/Untitled%20design%20(14).png");
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: all 0.5s ease-in;
+}
+.res:hover {
+  transform: scale(1.1);
+}
+.restro-name {
+  font-size: 30px;
+}
+
+.restro-address,
+.restro-cuisine {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.restro-rating img {
+  width: 20px;
+  height: 20px;
+}
