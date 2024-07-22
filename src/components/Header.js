@@ -44,7 +44,22 @@ const Header = () => {
               Quotes
             </li>{" "}
           </Link>
-          <li>Restaurants</li>
+          <Link
+            to="/restaurants"
+            onClick={() => {
+              setCurrentTab("Restaurants");
+            }}
+          >
+            <li
+              style={
+                currenttab == "Restaurants"
+                  ? { color: "royalblue" }
+                  : { color: "white" }
+              }
+            >
+              Restaurants
+            </li>{" "}
+          </Link>
           <li>Foods</li>
           <li>Contact</li>
         </ul>
