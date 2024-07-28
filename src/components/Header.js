@@ -60,7 +60,22 @@ const Header = () => {
               Restaurants
             </li>{" "}
           </Link>
-          <li>Foods</li>
+          <Link
+            to="/foods"
+            onClick={() => {
+              setCurrentTab("Foods");
+            }}
+          >
+            <li
+              style={
+                currenttab == "Foods"
+                  ? { color: "royalblue" }
+                  : { color: "white" }
+              }
+            >
+              Foods
+            </li>{" "}
+          </Link>
           <li>Contact</li>
         </ul>
         <button>Sign In</button>
