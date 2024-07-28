@@ -1,0 +1,12 @@
+.recipes_Container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searchRecipe {
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
