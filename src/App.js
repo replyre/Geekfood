@@ -8,6 +8,7 @@ import Quotes from "./pages/Quotes";
 import NoPage from "./pages/Nopage";
 import Restaurants from "./pages/Restaurants";
 import Food from "./pages/Food";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="quotes" element={<Quotes />} />
           <Route path="restaurants" element={<Restaurants />} />
           <Route path="foods" element={<Food />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer></Footer>
